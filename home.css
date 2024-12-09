@@ -1,0 +1,175 @@
+body {
+  background: midnightblue;
+  padding-bottom: 50px;
+  user-select: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.625rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.title-header {
+  color: red;
+  text-shadow: 1px 1px 3px darkred;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.chapeau-de-noel {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.chapeau-de-noel1 {
+  transform: rotateY(180deg);
+  margin-left: 0.9rem;
+}
+
+.chapeau-de-noel2 {
+  margin-right: 0.9rem;
+}
+
+.saint-def-container {
+  background: red;
+  width: 300px;
+  padding: 40px 50px;
+  border-radius: 70px;
+}
+
+.saint-def {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 1px 1px 3px whitesmoke;
+  text-align: center;
+}
+
+.saint-chooser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  font-size: 1.5rem;
+  color: red;
+  text-shadow: 1px 1px 3px red;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.choose-container {
+  display: flex;
+  justify-content: center;
+}
+
+.number-input {
+  border: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  width: 400px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.number-input::placeholder {
+  font-size: 1rem;
+  color: red;
+  text-shadow: 1px 1px 2px red;
+}
+
+.choose {
+  border: none;
+  background: red;
+  width: 10rem;
+  height: 4.5rem;
+  font-size: 1.1rem;
+  color: white;
+  text-shadow: 1px 1px 2px whitesmoke;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-left: 1.3rem;
+  margin-top: 0.9rem;
+}
+
+.text {
+  font-size: 1.5rem;
+  color: red;
+  text-shadow: 1px 1px 3px red;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-bottom: 20px;
+  }
+
+  .title-header {
+    font-size: 2rem;
+  }
+
+  .saint-def-container {
+    width: 250px;
+    padding: 30px 40px;
+  }
+
+  .number-input {
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .choose {
+    width: 8rem;
+    height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title-header {
+    font-size: 1.5rem;
+  }
+
+  .saint-def-container {
+    width: 200px;
+    padding: 20px 30px;
+  }
+
+  .number-input {
+    width: 250px;
+  }
+
+  .choose {
+    width: 7rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .saint-def-container {
+    width: 350px;
+    padding: 50px 60px;
+  }
+
+  .number-input {
+    width: 500px;
+  }
+
+  .choose {
+    width: 12rem;
+    height: 5rem;
+  }
+}
